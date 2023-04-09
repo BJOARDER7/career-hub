@@ -16,7 +16,7 @@ const JobCategories = () => {
     <div className='text-center'>
       <h2 className='text-2xl font-bold mb-3'>Job Category List</h2>
       <p>Choose the right category for your job. Accurately categorising positions helps candidates search for the most relevant jobs.</p>
-      <div className='job-categories'>
+      <div className='md:grid md:grid-cols-4 justify-center items-center'>
         {
           categories.map(category => <JobCategory
           key={category.jobId}

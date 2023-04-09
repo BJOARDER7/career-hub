@@ -3,25 +3,25 @@
       "jobId": "SE",
       "title": "Software Engineer",
       "available_jobs": 100,
-      "image_link": "https://example.com/software-engineer.jpg"
+      "image_link": "../src/images/icon1.png"
     },
     { 
       "jobId": "DS",
       "title": "Data Scientist",
       "available_jobs": 75,
-      "image_link": "https://example.com/data-scientist.jpg"
+      "image_link": "../src/images/icon2.png"
     },
     { 
       "jobId": "UD",
       "title": "UI/UX Designer",
       "available_jobs": 885,
-      "image_link": "https://example.com/ui-ux-designer.jpg"
+      "image_link": "../src/images/icon3.png"
     },
     { 
       "jobId": "MM",
       "title": "Marketing Manager",
       "available_jobs": 358,
-      "image_link": "https://example.com/marketing-manager.jpg"
+      "image_link": "../src/images/icon4.png"
     }
   ]
 
