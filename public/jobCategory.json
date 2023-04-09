@@ -1,0 +1,27 @@
+ [
+    { 
+      "jobId": "SE",
+      "title": "Software Engineer",
+      "available_jobs": 100,
+      "image_link": "https://example.com/software-engineer.jpg"
+    },
+    { 
+      "jobId": "DS",
+      "title": "Data Scientist",
+      "available_jobs": 75,
+      "image_link": "https://example.com/data-scientist.jpg"
+    },
+    { 
+      "jobId": "UD",
+      "title": "UI/UX Designer",
+      "available_jobs": 885,
+      "image_link": "https://example.com/ui-ux-designer.jpg"
+    },
+    { 
+      "jobId": "MM",
+      "title": "Marketing Manager",
+      "available_jobs": 358,
+      "image_link": "https://example.com/marketing-manager.jpg"
+    }
+  ]
+
