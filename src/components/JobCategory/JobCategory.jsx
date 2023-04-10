@@ -2,7 +2,7 @@ import React from 'react';
 import './JobCategory.css';
 
 const JobCategory = ({category}) => {
-  console.log(category)
+  
   const {image_link, title, available_jobs} = category;
   return (
     <div className='job-category'>
