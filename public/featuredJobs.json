@@ -1,0 +1,112 @@
+ [
+    {
+      "id": 1,
+      "company_logo": "https://images.unsplash.com/photo-1529612700005-e35377bf1415?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z29vZ2xlJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
+      "job_title": "Software Engineer",
+      "company_name": "Company 1",
+      "remote_or_onsite": "Remote",
+      "location": "Anywhere",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$100,000 - $120,000",
+      "job_description": "We are looking for an experienced Software Engineer to join our team...",
+      "job_responsibility": "- Design, develop, and maintain software applications...",
+      "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
+      "experiences": "3+ years of experience in software development",
+      "contact_information": {
+        "phone": "555-1234",
+        "email": "careers@company1.com"
+      }
+    },
+    {
+      "id": 2,
+      "company_logo": "https://thumbs.dreamstime.com/z/data-science-logo-icon-design-vector-100675205.jpg",
+      "job_title": "Data Scientist",
+      "company_name": "Company 2",
+      "remote_or_onsite": "Onsite",
+      "location": "New York, NY",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$120,000 - $150,000",
+      "job_description": "We are seeking a Data Scientist to join our growing team...",
+      "job_responsibility": "- Analyze and interpret complex data sets...",
+      "educational_requirements": "Master's degree in a quantitative field",
+      "experiences": "5+ years of experience in data science",
+      "contact_information": {
+        "phone": "555-5678",
+        "email": "careers@company2.com"
+      }
+    },
+    {
+      "id": 3,
+      "company_logo": "https://elements-cover-images-0.imgix.net/32a02910-23d4-4b65-b94b-49ff5af043af?auto=compress%2Cformat&fit=max&w=900&s=7efd5acceded3508d541d48500f22d36",
+      "job_title": "UI/UX Designer",
+      "company_name": "Company 3",
+      "remote_or_onsite": "Remote",
+      "location": "Anywhere",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$80,000 - $100,000",
+      "job_description": "We are looking for a talented UI/UX Designer to join our team...",
+      "job_responsibility": "- Design and develop intuitive user interfaces...",
+      "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Human-Computer Interaction, or a related field",
+      "experiences": "3+ years of experience in UI/UX design",
+      "contact_information": {
+        "phone": "555-9012",
+        "email": "careers@company3.com"
+      }
+    },
+    {
+      "id": 4,
+      "company_logo": "https://www.logodesign.net/images/home-industry/marketing-logo-01.jpg",
+      "job_title": "Marketing Manager",
+      "company_name": "Company 4",
+      "remote_or_onsite": "Onsite",
+      "location": "San Francisco, CA",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$100,000 - $130,000",
+      "job_description": "We are seeking a Marketing Manager to join our team...",
+      "job_responsibility": "- Develop and implement marketing strategies...",
+      "educational_requirements": "Bachelor's or Master's degree in Marketing, Communications, or a related field",
+      "experiences": "5+ years of experience in marketing",
+      "contact_information": {
+        "phone": "555-8563",
+        "email": "careers@company4.com"
+      }
+    },
+
+    {
+          "id": 5,
+          "company_logo": "https://img.freepik.com/free-vector/creative-gradient-code-logo_23-2148820572.jpg",
+          "job_title": "Web Developer",
+          "company_name": "Company 5",
+          "remote_or_onsite": "Remote",
+          "location": "Anywhere",
+          "fulltime_or_parttime": "Part-time",
+          "salary": "$40,000 - $50,000",
+          "job_description": "We are seeking a Web Developer to join our team...",
+          "job_responsibility": "- Develop and maintain websites and web applications...",
+          "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
+          "experiences": "2+ years of experience in web development",
+          "contact_information": {
+            "phone": "555-3334",
+            "email": "careers@company5.com"
+          }
+        },
+        {
+          "id": 6,
+          "company_logo": "https://img.freepik.com/free-vector/flat-code-logo-collection_23-2148829940.jpg",
+          "job_title": "Marketing Coordinator",
+          "company_name": "Company 6",
+          "remote_or_onsite": "Onsite",
+          "location": "Los Angeles, CA",
+          "fulltime_or_parttime": "Full-time",
+          "salary": "$50,000 - $60,000",
+          "job_description": "We are seeking a Marketing Coordinator to join our team...",
+          "job_responsibility": "- Assist in the development and implementation of marketing strategies...",
+          "educational_requirements": "Bachelor's degree in Marketing, Communications, or a related field",
+          "experiences": "1+ years of experience in marketing",
+          "contact_information": {
+            "phone": "555-6078",
+            "email": "careers@company6.com"
+          }
+        }
+      ]
+   
