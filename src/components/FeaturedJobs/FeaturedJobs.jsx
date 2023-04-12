@@ -4,7 +4,7 @@ import SingleFeatureJob from '../SingleFeatureJob/SingleFeatureJob';
 
 const FeaturedJobs = () => {
   const jobs = useLoaderData();
-  console.log(jobs)
+  
   return (
     <div>
       <div className='text-center'>

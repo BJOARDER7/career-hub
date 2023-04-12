@@ -12,10 +12,9 @@
       "job_responsibility": "- Design, develop, and maintain software applications...",
       "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
       "experiences": "3+ years of experience in software development",
-      "contact_information": {
-        "phone": "555-1234",
-        "email": "careers@company1.com"
-      }
+      "phone": "555-1234",
+      "email": "careers@company1.com"
+      
     },
     {
       "id": 2,
@@ -30,10 +29,9 @@
       "job_responsibility": "- Analyze and interpret complex data sets...",
       "educational_requirements": "Master's degree in a quantitative field",
       "experiences": "5+ years of experience in data science",
-      "contact_information": {
-        "phone": "555-5678",
-        "email": "careers@company2.com"
-      }
+      "phone": "555-5678",
+      "email": "careers@company2.com"
+      
     },
     {
       "id": 3,
@@ -48,10 +46,9 @@
       "job_responsibility": "- Design and develop intuitive user interfaces...",
       "educational_requirements": "Bachelor's or Master's degree in Graphic Design, Human-Computer Interaction, or a related field",
       "experiences": "3+ years of experience in UI/UX design",
-      "contact_information": {
-        "phone": "555-9012",
-        "email": "careers@company3.com"
-      }
+      "phone": "555-9012",
+      "email": "careers@company3.com"
+      
     },
     {
       "id": 4,
@@ -66,10 +63,9 @@
       "job_responsibility": "- Develop and implement marketing strategies...",
       "educational_requirements": "Bachelor's or Master's degree in Marketing, Communications, or a related field",
       "experiences": "5+ years of experience in marketing",
-      "contact_information": {
-        "phone": "555-8563",
-        "email": "careers@company4.com"
-      }
+      "phone": "555-8563",
+      "email": "careers@company4.com"
+      
     },
 
     {
@@ -85,15 +81,14 @@
           "job_responsibility": "- Develop and maintain websites and web applications...",
           "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
           "experiences": "2+ years of experience in web development",
-          "contact_information": {
-            "phone": "555-3334",
-            "email": "careers@company5.com"
-          }
+          "phone": "555-3334",
+          "email": "careers@company5.com"
+          
         },
         {
           "id": 6,
           "company_logo": "https://img.freepik.com/free-vector/flat-code-logo-collection_23-2148829940.jpg",
-          "job_title": "Marketing Coordinator",
+          "job_title": "Web Designer",
           "company_name": "Company 6",
           "remote_or_onsite": "Onsite",
           "location": "Los Angeles, CA",
@@ -103,10 +98,9 @@
           "job_responsibility": "- Assist in the development and implementation of marketing strategies...",
           "educational_requirements": "Bachelor's degree in Marketing, Communications, or a related field",
           "experiences": "1+ years of experience in marketing",
-          "contact_information": {
-            "phone": "555-6078",
-            "email": "careers@company6.com"
-          }
+          "phone": "555-6078",
+          "email": "careers@company6.com"
+          
         }
       ]
    

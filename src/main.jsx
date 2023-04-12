@@ -6,21 +6,29 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './components/Home/Home';
 import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
+import JobDetails from './components/JobDetails/JobDetails';
+import Main from './components/Main/Main';
+import Home from './components/Home/Home';
+
 
 const router = createBrowserRouter([
   {
     path:'/',
-    element: <Home></Home>,
+    element: <Main></Main>,
     children: [
       {
         path:'/',
-        element: <FeaturedJobs></FeaturedJobs>,
+        element: <Home></Home>,
         loader: () => fetch('/public/featuredJobs.json')
+      },
+      {
+        path:'/jobs/:jobId',
+        element: <JobDetails></JobDetails>,
+        loader: ({params}) => fetch(`/public/featuredJobs.json`)
       }
     ]
-  },
+  }
   
 ])
 
@@ -29,3 +37,30 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+
+/**
+ * const router = createBrowserRouter([
+  
+    {
+      path:'/',
+      element: <Navbar></Navbar>,
+      children: [
+
+      {
+        path:'/home',
+        element: <Home></Home>,
+      },
+      {
+        path:'/home',
+        element: <FeaturedJobs></FeaturedJobs>,
+        loader: () => fetch('/public/featuredJobs.json')
+      },
+      {
+        path:'/home:jobId',
+        element: <JobDetails></JobDetails>
+      }
+    ]
+  },
+  
+])
+ */

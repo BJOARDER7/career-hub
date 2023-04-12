@@ -2,9 +2,11 @@ import React from 'react';
 import './SingleFeatureJob.css';
 import locationIcon from '../../images/location-icon.png';
 import dollarIcon from '../../images/dollar-icon.jpg';
+import { Link } from 'react-router-dom';
+
 
 const SingleFeatureJob = ({job}) => {
-  const {company_logo, job_title, company_name, remote_or_onsite, location, salary} = job;
+  const {company_logo, job_title, company_name, remote_or_onsite, location, salary, id} = job;
   
   return (
     <div className='job overflow-hidden'>
@@ -26,6 +28,7 @@ const SingleFeatureJob = ({job}) => {
           </div>
             
         </div>
+        <button className='bg-purple-800 text-white p-2 my-2 rounded'><Link to={`/jobs/${id}`}>View Details</Link></button>
         
     </div>
   );
