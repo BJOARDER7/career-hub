@@ -19,7 +19,7 @@ const JobDetails = () => {
       <h2 className='text-2xl font-bold mb-4 text-center'>Job Details</h2>
       <div className=' md:flex mt-10'>
 
-    <div className='single-job pr-8'>
+    <div className='single-job pr-4'>
       <p><span className='font-bold'>Job Description:</span> {job.job_description}</p>
       <p><span className='font-bold'>Job Responsibility:</span> {job.job_responsibility}</p>
       <p><span className='font-bold'>Educational Requirements:</span><br />{job.educational_requirements}</p>
