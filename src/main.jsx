@@ -10,22 +10,29 @@ import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
 import JobDetails from './components/JobDetails/JobDetails';
 import Main from './components/Main/Main';
 import Home from './components/Home/Home';
+import Notfound from './components/NotFound/Notfound';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path:'/',
         element: <Home></Home>,
-        loader: () => fetch('/public/featuredJobs.json')
+        loader: () => fetch('/featuredJobs.json')
       },
       {
         path:'/jobs/:jobId',
         element: <JobDetails></JobDetails>,
-        loader: ({params}) => fetch(`/public/featuredJobs.json`)
+        loader: ({params}) => fetch(`/featuredJobs.json`)
+      },
+      {
+        path: "*",
+        element: <Notfound></Notfound>
       }
     ]
   }
