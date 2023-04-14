@@ -3,25 +3,25 @@
       "jobId": "SE",
       "title": "Software Engineer",
       "available_jobs": 100,
-      "image_link": "../src/images/icon1.png"
+      "image_link": "https://i.ibb.co/109pzKs/icon1.png"
     },
     { 
       "jobId": "DS",
       "title": "Data Scientist",
       "available_jobs": 75,
-      "image_link": "../src/images/icon2.png"
+      "image_link": "https://i.ibb.co/ZX3ztyY/icon2.png"
     },
     { 
       "jobId": "UD",
       "title": "UI/UX Designer",
       "available_jobs": 885,
-      "image_link": "../src/images/icon3.png"
+      "image_link": "https://i.ibb.co/L1N0gzz/icon3.png"
     },
     { 
       "jobId": "MM",
       "title": "Marketing Manager",
       "available_jobs": 358,
-      "image_link": "../src/images/icon4.png"
+      "image_link": "https://i.ibb.co/THgK52M/icon4.png"
     }
   ]
 

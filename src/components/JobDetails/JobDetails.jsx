@@ -1,6 +1,6 @@
 import './JobDetails.css';
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const JobDetails = () => {
     
@@ -38,7 +38,8 @@ const JobDetails = () => {
         <p><span className='font-bold'>Phone:</span> {phone}</p>
         <p><span className='font-bold'>Email:</span> {email}</p>
         <p><span className='font-bold'>Address:</span> {location}</p>
-        <button onClick={handleJob} className='bg-purple-800 text-white p-2 my-4 rounded w-full'>Apply Now</button>
+        <Link to="/jobs"><button onClick={handleJob} className='bg-purple-800 text-white p-2 my-4 rounded w-full'>Apply Now</button></Link>
+        
       </div>
       
       </div>

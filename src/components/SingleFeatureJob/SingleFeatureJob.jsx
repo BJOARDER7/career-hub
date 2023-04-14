@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleFeatureJob.css';
-import locationIcon from '../../images/location-icon.png';
-import dollarIcon from '../../images/dollar-icon.jpg';
+import locationIcon from '/location-icon.png';
+import dollarIcon from '/dollar-icon.jpg';
 import { Link } from 'react-router-dom';
 
 
