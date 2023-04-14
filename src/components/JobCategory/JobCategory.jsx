@@ -17,3 +17,4 @@ const JobCategory = ({category}) => {
 };
 
 export default JobCategory;
+

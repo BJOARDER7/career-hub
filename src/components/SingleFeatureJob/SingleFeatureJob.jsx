@@ -35,3 +35,4 @@ const SingleFeatureJob = ({job}) => {
 };
 
 export default SingleFeatureJob;
+

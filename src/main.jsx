@@ -28,7 +28,14 @@ const router = createBrowserRouter([
       {
         path:'/jobs/:jobId',
         element: <JobDetails></JobDetails>,
-        loader: ({params}) => fetch(`/featuredJobs.json`)
+        loader: async ({params}) => {
+          const res = await fetch("/featuredJobs.json");
+          const jobs = await res.json();
+
+          const findjob = jobs.find(job => job.id == params.jobId);
+          return findjob;
+
+        }
       },
       {
         path: "*",
@@ -45,29 +52,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-/**
- * const router = createBrowserRouter([
-  
-    {
-      path:'/',
-      element: <Navbar></Navbar>,
-      children: [
-
-      {
-        path:'/home',
-        element: <Home></Home>,
-      },
-      {
-        path:'/home',
-        element: <FeaturedJobs></FeaturedJobs>,
-        loader: () => fetch('/public/featuredJobs.json')
-      },
-      {
-        path:'/home:jobId',
-        element: <JobDetails></JobDetails>
-      }
-    ]
-  },
-  
-])
- */

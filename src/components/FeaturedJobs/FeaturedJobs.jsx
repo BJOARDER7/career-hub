@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import SingleFeatureJob from '../SingleFeatureJob/SingleFeatureJob';
 
 const FeaturedJobs = () => {
-  const jobs = useLoaderData();
+  const jobsData = useLoaderData();
+  const [jobs, setJobs] = useState(jobsData);
+  const [showAllJob, setShowAllJob] = useState(false);
   
   return (
     <div>
@@ -13,12 +15,22 @@ const FeaturedJobs = () => {
       </div>
       <div className='md:grid md:grid-cols-2 justify-center items-center'>
         {
-          jobs.map(job => <SingleFeatureJob
-          key={job.id}
-          job={job}
-          ></SingleFeatureJob>)
-        }
+          showAllJob ? jobs.map((job) => <SingleFeatureJob key={job.id} job={job} />)
+          : jobs
+              .slice(0, 4)
+              .map((job) => <SingleFeatureJob key={job.id} job={job} />) 
+          }
       </div>
+      <div className="text-center">
+          {!showAllJob && (
+            <button
+              onClick={() => setShowAllJob(true)}
+              className='bg-purple-800 text-white p-2 rounded w-1/6 py-2'
+            >
+              See All Jobs
+            </button>
+          )}
+        </div>
 
     </div>
   );

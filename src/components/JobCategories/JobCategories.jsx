@@ -9,7 +9,7 @@ const JobCategories = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect( () => {
-    fetch('/public/jobCategory.json')
+    fetch('/jobCategory.json')
     .then(res => res.json())
     .then(data => setCategories(data))
   }, [])
@@ -31,3 +31,4 @@ const JobCategories = () => {
 };
 
 export default JobCategories;
+
