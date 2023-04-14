@@ -8,9 +8,9 @@ const JobDetails = () => {
   const {job_description, job_responsibility,educational_requirements, experiences, salary, job_title, phone, email, location} = job;
    
   const handleJob = () => {
-    const storedData = JSON.parse(localStorage.getItem("jobs"));
-    if(storedData){
-        localStorage.setItem("jobs",JSON.stringify([...storedData,job]))
+    const storedJobData = JSON.parse(localStorage.getItem("jobs"));
+    if(storedJobData){
+        localStorage.setItem("jobs",JSON.stringify([...storedJobData,job]))
     } else{
         localStorage.setItem("jobs",JSON.stringify([job]))
     }
