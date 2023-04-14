@@ -10,6 +10,7 @@ const SingleFeatureJob = ({job}) => {
   
   return (
     <div className='job overflow-hidden'>
+      <div>
         <img className='object-cover w-100% h-24' src={company_logo} alt="" />
         <h2 className='text-xl font-bold'>{job_title}</h2>
         <h3>{company_name}</h3>
@@ -26,7 +27,7 @@ const SingleFeatureJob = ({job}) => {
             <img className='w-100% h-6' src={dollarIcon} alt="" />
             <h3> Salary : {salary}</h3>
           </div>
-            
+          </div>  
         </div>
         <button className='bg-purple-800 text-white p-2 my-2 rounded'><Link to={`/jobs/${id}`}>View Details</Link></button>
         

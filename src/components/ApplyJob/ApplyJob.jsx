@@ -24,7 +24,7 @@ const ApplyJob = () => {
     <div>
 
       <div className="my-3">
-        <label htmlFor="" className='font-bold text-xl mt-12 text-blue-500'>Filter Job: </label>
+        <label htmlFor="" className='font-bold text-xl mt-12 text-blue-500'>Filter Job By: </label>
         <select onChange={handleFilter} className="select border-2 w-1/6 ml-2">
           <option disabled value="selected">
             Choose Here

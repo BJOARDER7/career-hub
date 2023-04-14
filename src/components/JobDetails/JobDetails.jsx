@@ -1,11 +1,24 @@
 import './JobDetails.css';
-import React, { useState } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const JobDetails = () => {
     
   const job = useLoaderData();
-  const {job_description, job_responsibility,educational_requirements, experiences, salary, job_title, phone, email, location} = job;
+  const {job_description, job_responsibility,educational_requirements, experiences, salary, job_title, phone, email, location, id} = job;
+
+  const [appliedJob,setAppliedJob] = useState(false)
+
+  useEffect(() => {
+    const storedJobData = JSON.parse(localStorage.getItem("jobs"));
+    if(storedJobData){
+        const exist = storedJobData.find(job => job.id == id);
+        if(exist){
+            setAppliedJob(true)
+        }
+
+    }
+  },[job])
    
   const handleJob = () => {
     const storedJobData = JSON.parse(localStorage.getItem("jobs"));
@@ -14,6 +27,7 @@ const JobDetails = () => {
     } else{
         localStorage.setItem("jobs",JSON.stringify([job]))
     }
+    setAppliedJob(true)
   }
 
     
@@ -38,8 +52,21 @@ const JobDetails = () => {
         <p><span className='font-bold'>Phone:</span> {phone}</p>
         <p><span className='font-bold'>Email:</span> {email}</p>
         <p><span className='font-bold'>Address:</span> {location}</p>
-        <Link to="/jobs"><button onClick={handleJob} className='bg-purple-800 text-white p-2 my-4 rounded w-full'>Apply Now</button></Link>
         
+        <div className="card-actions justify-end">
+        
+        <button disabled={appliedJob} onClick={handleJob} className='bg-purple-800 text-white p-2 my-4 rounded w-full'>
+            {
+                appliedJob ?
+                "Already Applied"
+                :
+                "Apply Now"
+                }
+
+            </button>
+            
+            </div>
+                
       </div>
       
       </div>
