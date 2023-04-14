@@ -7,6 +7,7 @@ const Navbar = () => {
     <nav className='md:flex justify-between items-center'>
       <h4 className='text-3xl font-bold'>BuiltCareer</h4>
       <div className='flex flex-col md:flex md:flex-row justify-between md:gap-5'>
+      <Link to="/">Home</Link>
       <Link to="/statistics">Statistics</Link>
       <Link to="/jobs">Applied Job</Link>
       <Link to="/blog">Blog</Link>

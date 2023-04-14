@@ -17,16 +17,16 @@ const ApplyJob = () => {
   const handleFilter = (event) => {
     const value = event.target.value;
     const filterJobData = jobs.filter((job) => job.remote_or_onsite == value );
-    setFilterOrder(filterJobData)
+    setFilterJob(filterJobData)
   }
 
   return (
     <div>
 
       <div className="my-3">
-        <label className='font-bold text-xl mt-12 text-blue-500' for="" >Filter Job: </label>
-        <select onChange={handleFilter} className="select select-bordered border border-2 w-1/6 ml-2">
-          <option disabled selected>
+        <label htmlFor="" className='font-bold text-xl mt-12 text-blue-500'>Filter Job: </label>
+        <select onChange={handleFilter} className="select border-2 w-1/6 ml-2">
+          <option disabled value="selected">
             Choose Here
           </option>
           <option value="Remote">Remote Jobs</option>
@@ -37,7 +37,7 @@ const ApplyJob = () => {
       {filterJob.length > 0 ? (
         filterJob?.map((job) => (
           <div className="my-4">
-            <SingleFeatureJob job={job} />
+            <SingleFeatureJob key={job.id} job={job}></SingleFeatureJob>
           </div>
         ))
       ) : (
